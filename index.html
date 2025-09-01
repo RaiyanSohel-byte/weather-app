@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-2xl p-8 w-80 text-center">
+      <!-- City Name -->
+      <h1 id="display-location" class="text-2xl font-bold mb-4"></h1>
+
+      <!-- Temperature -->
+      <div class="flex flex-col items-center mb-4">
+        <span id="temp" class="text-5xl font-extrabold text-gray-800"></span>
+        <span><img id="weather-icon" src="" alt="" /></span>
+        <span id="weather" class="text-gray-500"></span>
+      </div>
+
+      <!-- Weather Details -->
+      <div class="grid grid-cols-2 gap-4 text-gray-700">
+        <div class="bg-blue-50 rounded-lg p-3">
+          <p class="text-sm">Feels Like</p>
+          <p id="feels-like" class="font-semibold"></p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-3">
+          <p class="text-sm">Max Temp</p>
+          <p id="max-temp" class="font-semibold"></p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-3">
+          <p class="text-sm">Min Temp</p>
+          <p id="min-temp" class="font-semibold"></p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-3">
+          <p class="text-sm">Humidity</p>
+          <p id="humidity" class="font-semibold"></p>
+        </div>
+      </div>
+
+      <!-- Optional: Search -->
+      <div class="mt-6">
+        <input
+          id="input-location"
+          type="text"
+          placeholder="Enter city"
+          class="border border-gray-300 rounded-full px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+        <button
+          id="button"
+          class="mt-2 bg-blue-500 text-white rounded-full px-4 py-2 w-full hover:bg-blue-600 transition"
+        >
+          Get Weather
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
